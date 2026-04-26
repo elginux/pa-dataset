@@ -1,0 +1,58 @@
+{
+  "name": "@elginux/pa-dataset",
+  "version": "1.1.0",
+  "description": "Open dataset (CC BY 4.0) of French DGFiP-approved e-invoicing platforms (Plateformes Agréées). 127 fully-registered + 19 pending interoperability tests + 3 compatible solutions, snapshot 26 April 2026.",
+  "license": "CC-BY-4.0",
+  "author": {
+    "name": "Laurent Jachimiak",
+    "url": "https://elginux.fr"
+  },
+  "homepage": "https://github.com/elginux/pa-dataset",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elginux/pa-dataset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elginux/pa-dataset/issues"
+  },
+  "keywords": [
+    "facturation-electronique",
+    "factur-x",
+    "plateforme-agreee",
+    "dgfip",
+    "tpe",
+    "pme",
+    "dataset",
+    "open-data",
+    "france",
+    "annuaire"
+  ],
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./data": "./data/pa-dataset-v1.json"
+  },
+  "files": [
+    "src",
+    "data",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "lint": "echo \"(lint deferred to consumer repo)\""
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
