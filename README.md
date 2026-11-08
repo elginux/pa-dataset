@@ -4,7 +4,7 @@
 
 **Open dataset des Plateformes Agréées (PA) DGFiP** — facturation électronique française 2026-2027.
 
-127 PA pleinement immatriculées + 19 en attente des tests d'interopérabilité + 3 Solutions Compatibles. Snapshot vérifié sur [impots.gouv.fr](https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees), mise à jour DGFiP du 24 avril 2026, vérifié Elginux le 26 avril 2026.
+158 PA pleinement immatriculées + 7 en attente des tests d'interopérabilité + 3 Solutions Compatibles. Snapshot vérifié sur [impots.gouv.fr](https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees), mise à jour DGFiP du 3 novembre 2026, vérifié Elginux le 7 novembre 2026.
 
 Source primaire de [ConformiCheck](https://conformicheck.fr) (comparateur) et FactureDirectory (annuaire SEO).
 
@@ -35,7 +35,7 @@ yarn add @elginux/pa-dataset
 ```
 
 > **Note** : si tu n'utilises pas Node, tu peux aussi récupérer directement le JSON :
-> [`data/pa-dataset-v1.json`](./data/pa-dataset-v1.json) (~250 KB, 127 + 19 + 3 entrées)
+> [`data/pa-dataset-v1.json`](./data/pa-dataset-v1.json) (~430 KB, 158 + 7 + 3 entrées)
 
 ---
 
@@ -88,11 +88,11 @@ Champs principaux par plateforme :
 
 | Niveau | Définition |
 |---|---|
-| **full** | Toutes sections renseignées + vérification éditeur. **7 PA** au 26 avril 2026 (Indy, Pennylane, Tiime, Sellsy, Sage, Cegid, Quadient-Serensia) |
+| **full** | Toutes sections renseignées + vérification éditeur. **13 PA** au 7 novembre 2026 (19 fiches exploitables par le moteur de scoring) |
 | **partial** | Champs essentiels (id, name, url, target_personas, pricing approximatif) |
-| **minimal** | Identité officielle DGFiP uniquement (nom, raison sociale, adresse, URL, email, statut, date d'agrément) — **120 PA** au 26 avril 2026 |
+| **minimal** | Identité officielle DGFiP uniquement (nom, raison sociale, adresse, URL, email, statut, date d'agrément) — **27 PA** au 7 novembre 2026 (et 118 PA en `partial`) |
 | **sc_full** | Solutions Compatibles (3) — EBP, Henrri, Freebe |
-| **en_attente_minimal** | 19 PA en attente des tests d'interopérabilité |
+| **en_attente_minimal** | 7 PA en attente des tests d'interopérabilité |
 
 Le consommateur (UI ConformiCheck/FactureDirectory) doit afficher "Fiche en cours de complétion" sur les fiches `minimal`.
 

@@ -1,7 +1,7 @@
 {
   "name": "@elginux/pa-dataset",
-  "version": "1.1.0",
-  "description": "Open dataset (CC BY 4.0) of French DGFiP-approved e-invoicing platforms (Plateformes Agréées). 127 fully-registered + 19 pending interoperability tests + 3 compatible solutions, snapshot 26 April 2026.",
+  "version": "1.4.0",
+  "description": "Open dataset (CC BY 4.0) of French DGFiP-approved e-invoicing platforms (Plateformes Agréées). 158 fully-registered + 7 pending interoperability tests + 3 compatible solutions, snapshot 7 November 2026 (DGFiP 3 November 2026).",
   "license": "CC-BY-4.0",
   "author": {
     "name": "Laurent Jachimiak",
